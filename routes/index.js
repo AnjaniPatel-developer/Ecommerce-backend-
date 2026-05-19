@@ -1,0 +1,25 @@
+const Router = require("express").Router()
+const MaincategoryRouter = require("./MaincategoryRouter")
+const SubcategoryRouter = require("./SubcategoryRouter")
+const BrandRouter = require("./BrandRouter")
+const FeatureRouter = require("./FeatureRouter")
+const FaqRouter = require("./FaqRouter")
+const SettingRouter = require("./SettingRouter")
+const ProductRouter = require("./ProductRouter")
+const UserRouter = require("./UserRouter")
+const CartRouter = require("./CartRouter")
+const WishlistRouter = require("./WishlistRouter")
+
+Router.use("/maincategory",MaincategoryRouter)
+Router.use("/subcategory",SubcategoryRouter)
+Router.use("/brand",BrandRouter)
+Router.use("/feature",FeatureRouter)
+Router.use("/faq",FaqRouter)
+Router.use("/setting",SettingRouter)
+Router.use("/product",ProductRouter)
+Router.use("/user",UserRouter)
+Router.use("/cart",CartRouter)
+Router.use("/wishlist",WishlistRouter)
+
+
+module.exports=Router
