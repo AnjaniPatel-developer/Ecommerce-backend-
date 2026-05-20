@@ -9,6 +9,7 @@ const ProductRouter = require("./ProductRouter")
 const UserRouter = require("./UserRouter")
 const CartRouter = require("./CartRouter")
 const WishlistRouter = require("./WishlistRouter")
+const CheckoutRouter = require("./CheckoutRouter")
 
 Router.use("/maincategory",MaincategoryRouter)
 Router.use("/subcategory",SubcategoryRouter)
@@ -20,6 +21,7 @@ Router.use("/product",ProductRouter)
 Router.use("/user",UserRouter)
 Router.use("/cart",CartRouter)
 Router.use("/wishlist",WishlistRouter)
+Router.use("/checkout",CheckoutRouter)
 
 
 module.exports=Router
